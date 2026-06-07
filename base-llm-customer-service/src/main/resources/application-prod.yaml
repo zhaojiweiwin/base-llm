@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: prod
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: qwen2.5:72b
+      embedding:
+        options:
+          model: bge-m3

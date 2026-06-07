@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: base-llm-customer-service
+  profiles:
+    active: local
+
+server:
+  port: 8080
+
+base-llm:
+  rag:
+    chunk-size: 800
+    chunk-overlap: 128
+    top-k: 5
+    similarity-threshold: 0.6
+
+dingtalk:
+  enabled: false
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
